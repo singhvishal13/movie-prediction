@@ -1,0 +1,13 @@
+library("base")
+args<-commandArgs(TRUE)
+n<-args[1]
+a<-read.csv("C:/Users/singh/Desktop/movie1.csv")
+info<-subset(a,movie_title==n)
+paste(info[12])
+paste(info[10])
+paste(info[7])
+paste(info[11])
+paste(info[15])
+paste(info[2])
+paste(info[9])
+paste(info[24])

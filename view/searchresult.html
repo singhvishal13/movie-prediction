@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>movie success 2020</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+</head>
+<style>
+    body{
+    background:  linear-gradient(rgba(0, 0, 0, 0.50), rgba(0,0,0, 0.70)),url(images/background.jpg);
+    
+    }
+    .header_content h2{
+        font-size:170%;
+        transition: 0.4s;
+    }
+    
+    .table-content{
+        margin-left: auto;
+        margin:auto;
+        
+    }
+    .table-content td{
+        text-align: left;
+        padding: 5px 20px;
+        transition: 0.8s;
+        
+    }
+    .table-content input{
+        width: auto;
+    }
+    .text-input{
+        background: red;
+        color: white;
+        border: none;
+        padding: 4px;
+    }
+    
+    
+</style>
+<body>
+
+<header>
+	<div class="header_menu">
+		<div class="logo"> 
+			<a href="index.html"><img src="images/logo.png" alt="movie success"> </a>
+		</div>
+
+		<!-- admin tab
+        <div class="menu_list">
+            <ul>    
+                <li><a href="login.html">Admin</a></li>
+            </ul>
+        </div>
+
+    -->
+    </div>
+</header>
+	
+		<div class="header_content">
+        <h2> YOUR SEARCH RESULT</h2>
+        <table  class="table-content">
+        <tr>
+            <td><label>MOVIE-NAME</label></td>
+            <td><input type="text" class="text-input" id="movie-name" placeholder="" autocomplete="off" readonly></input></td>
+        </tr>
+        <tr>
+            <td><label>GENRE</label></td>
+            <td><input type="text" class="text-input" id="genre" placeholder="" autocomplete="off" readonly></input></td>
+        </tr>
+        <tr>
+            <td> <label>STAR-CAST</label></td>
+            <td><input type="text" class="text-input" id="star-cast" placeholder="" autocomplete="off" readonly></input></td>
+        </tr>
+        <tr>
+            <td><label>DIRECTOR</label></td> 
+            <td><input type="text" class="text-input" id="director" placeholder="" autocomplete="off" readonly></input></td>
+        </tr>
+        <tr>
+            <td><label>BUDGET</label></td>
+            <td><input type="text" class="text-input" id="budget" placeholder="" autocomplete="off" readonly></input></td>
+        </tr>
+        <tr>
+            <td><label>YEAR</label</td>
+            <td><input type="text" class="text-input" id="year" placeholder="" autocomplete="off" readonly></input></td>
+        </tr>
+
+     </table>   
+     
+    </div>
+
+<script>
+	var values=localStorage.getItem("txtValue");
+	document.getElementById("movie-name").value=values
+</script>
+
+    
+
+</body>
+</html>
